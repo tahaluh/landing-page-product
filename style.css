@@ -1,0 +1,168 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+* {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  magin: 0;
+  background-color: #e4f8f4;
+  font-family: 'Lato', sans-serif;
+}
+#header {
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4f8f4;
+  text-align: center;
+}
+#logo {
+  width: 60vw;
+  height: 10vh;
+}
+#header-img{
+  height: 100%;
+}
+#nav-bar {
+  width: 40vw;
+}
+#nav-bar > ul{
+   display: flex;
+   justify-content: space-around;
+   list-style-type: none;
+}
+#container {
+  max-width: 43vw;
+  margin: 15vh auto 0 auto;
+}
+#form-section {
+  text-align: center;
+}
+.form-group {
+  margin-top: 1.2rem;
+} 
+.form-group > input{
+  height: 1.5rem;
+  width: 16rem;
+}
+#submit{
+  font-size: 1.1rem;
+  font-weight: bold;
+  height: 1.5rem;
+  background: #f1d47f; 
+  border: 0;
+}
+.feature {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5rem 0px;
+}
+.icon {
+  color: #91b6c2;
+  width: 10%;
+}
+.desc {
+  width: 79%;
+}
+#video-section {
+  text-align: center;
+}
+#pricing {
+  display: flex;
+  justify-content: space-around;
+  margin: 7vh 0;
+}
+.product{
+  text-align: center;
+  border: 1px solid black;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product > h2 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  background: #b1d6d2;
+  width: 100%;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+.product > h3 {
+  padding: 1rem 0; 
+}
+.product > ul {
+  padding: 15px;
+  list-style: none;
+}
+.product > ul > li {
+  margin: 0.6rem 0;
+}
+.btn {
+  font-size: 1.1rem;
+  height: 2rem;
+  width: 50%;
+  margin: 1rem;
+  background: #f1d47f; 
+  border: 0;
+  text-transform: uppercase;
+}
+footer {
+  background: #c1e6e2;
+  text-align: right;
+}
+#footer-nav > ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+#footer-nav > ul > li {
+  padding: 15px;
+}
+footer > p {
+  font-size: 0.9rem;
+  padding: 0 1rem 1rem;
+}
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    width: 100%;
+  }
+  #nav-bar {
+    width: 100%;
+  }
+  #nav-bar > ul{
+    padding: 0;
+    flex-direction: column;    
+    width: 100%;
+  }
+  #container {
+  max-width: 100%;
+  margin: 20vh auto 0 auto;
+  }
+  #logo {
+    width: 100%;
+  }
+  .feature {
+    text-align: center;
+  }
+  .icon {
+    display: none;
+  }
+  #pricing {
+   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+  .product {
+    width: 80%;
+    margin: auto auto 5vh; 
+  }
+}
