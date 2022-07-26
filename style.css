@@ -1,4 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+:root {
+    --icon-color: #0984e3;
+    --background-color: #74b9ff;
+    --product-title-background-color: #0984e3;
+    --button-color: #f1d47f;
+    --footer-bg-color: #0984e3;
+}
 * {
   margin: 0;
 }
@@ -8,7 +15,7 @@ a {
 }
 body {
   magin: 0;
-  background-color: #e4f8f4;
+  background-color: var(--background-color);
   font-family: 'Lato', sans-serif;
 }
 #header {
@@ -19,7 +26,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e4f8f4;
+  background-color: var(--background-color);
   text-align: center;
 }
 #logo {
@@ -55,7 +62,7 @@ body {
   font-size: 1.1rem;
   font-weight: bold;
   height: 1.5rem;
-  background: #f1d47f; 
+  background: var(--button-color); 
   border: 0;
 }
 .feature {
@@ -65,7 +72,7 @@ body {
   margin: 5rem 0px;
 }
 .icon {
-  color: #91b6c2;
+  color: var(--icon-color);
   width: 10%;
 }
 .desc {
@@ -86,11 +93,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 0 20px;
 }
 .product > h2 {
   font-weight: 700;
   font-size: 1.1rem;
-  background: #b1d6d2;
+  background: var(--product-title-background-color);
   width: 100%;
   padding: 1rem 0;
   text-transform: uppercase;
@@ -110,12 +118,12 @@ body {
   height: 2rem;
   width: 50%;
   margin: 1rem;
-  background: #f1d47f; 
+  background: var(--button-color); 
   border: 0;
   text-transform: uppercase;
 }
 footer {
-  background: #c1e6e2;
+  background: var(--footer-bg-color);
   text-align: right;
 }
 #footer-nav > ul {
